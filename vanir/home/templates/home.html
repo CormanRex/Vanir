@@ -1,0 +1,46 @@
+{% extends "layouts/base.html" %}
+{% block body %}
+<div class="container">
+    <div class="row">
+        <button class="button-primary">Adauga</button>
+    </div>
+    <div class="row">
+        <input class="u-full-width" type="search" placeholder="filtreaza..">
+        <table class="u-full-width">
+          <thead>
+            <tr>
+              <th>Companie</th>
+              <th>Salariu</th>
+              <th>Pozitie</th>
+              <th>Oras</th>
+              <th>Ani experienta</th>
+              <th>Metoda colaborare</th>
+              <th>Data</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Oracle</td>
+              <td>2300&euro;</td>
+              <td>Javascript developer</td>
+              <td>Iasi</td>
+              <td>3</td>
+              <td>PFA</td>
+              <td>2020</td>
+            </tr>
+            <tr>
+              <td>Apple</td>
+              <td>1740&euro;</td>
+              <td>PHP developer</td>
+              <td>Bucuresti</td>
+              <td>12</td>
+              <td>Contract de munca</td>
+              <td>2008</td>
+            </tr>
+          </tbody>
+        </table>
+        <a class="button">Next</a>
+        <a class="button">Prev</a>
+    </div>
+</div>
+{% endblock %}

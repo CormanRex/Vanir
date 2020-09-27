@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
 
-from flask import Flask
+from vanir import run
 
-app = Flask(__name__)
+if __name__ == '__main__':
+    run()
+
+
