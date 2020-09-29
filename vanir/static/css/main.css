@@ -1,0 +1,20 @@
+.main {
+    padding: 50px 0px;
+}
+
+.bottom-nav {
+    display: flex;
+}
+
+.bottom-nav-btn:first-child {
+    margin-right: auto;
+}
+
+.bottom-nav-btn:last-child {
+    margin-left: auto;
+}
+
+
+#data-table thead tr th {
+    cursor: pointer;
+}

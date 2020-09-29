@@ -1,21 +1,18 @@
 {% extends "layouts/base.html" %}
 {% block body %}
-<div class="container">
-    <div class="row">
-        <button class="button-primary">Adauga</button>
-    </div>
+<div class="container main">
     <div class="row">
         <input class="u-full-width" type="search" placeholder="filtreaza..">
-        <table class="u-full-width">
+        <table class="u-full-width" id="data-table">
           <thead>
             <tr>
-              <th>Companie</th>
-              <th>Salariu</th>
-              <th>Pozitie</th>
-              <th>Oras</th>
-              <th>Ani experienta</th>
-              <th>Metoda colaborare</th>
-              <th>Data</th>
+              <th>Companie &uarr;</th>
+              <th>Salariu &uarr;</th>
+              <th>Pozitie &uarr;</th>
+              <th>Oras &uarr;</th>
+              <th>Ani experienta &uarr;</th>
+              <th>Metoda colaborare &uarr;</th>
+              <th>Data &uarr;</th>
             </tr>
           </thead>
           <tbody>
@@ -37,10 +34,40 @@
               <td>Contract de munca</td>
               <td>2008</td>
             </tr>
+            <tr>
+              <td>Facebook</td>
+              <td>5222&euro;</td>
+              <td>Rust developer</td>
+              <td>Bucuresti</td>
+              <td>8</td>
+              <td>Contract de munca</td>
+              <td>2018</td>
+            </tr>
+            <tr>
+              <td>E.ON</td>
+              <td>1300&euro;</td>
+              <td>Go developer</td>
+              <td>Bucuresti</td>
+              <td>5</td>
+              <td>Contract de munca</td>
+              <td>2015</td>
+            </tr>
+            <tr>
+              <td>Vaslui</td>
+              <td>3322&euro;</td>
+              <td>Java developer</td>
+              <td>Bucuresti</td>
+              <td>7</td>
+              <td>Contract de munca</td>
+              <td>2013</td>
+            </tr>
           </tbody>
         </table>
-        <a class="button">Next</a>
-        <a class="button">Prev</a>
+        <footer class="row bottom-nav">
+            <a class="button bottom-nav-btn">Prev</a>
+            <button class="button-primary bottom-nav-btn">Adauga</button>
+            <a class="button bottom-nav-btn">Next</a>
+        </footer>
     </div>
 </div>
 {% endblock %}
